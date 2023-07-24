@@ -1,0 +1,291 @@
+/* footer { */
+/* background-color: #515151; */
+/* padding: 100px 0; */
+/* color: #fff;
+}
+footer h1 {
+  margin-bottom: 30px;
+  color: #515151;
+  font-weight: 800;
+  font-style: italic;
+}
+footer .img {
+  background-color: #515151;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+footer .img i {
+  font-size: 20px;
+  margin: 5px;
+}
+footer .img span {
+  margin-top: 5px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+footer h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+footer li {
+  margin-bottom: 10px;
+  opacity: 0.5;
+} */
+
+/* updated footer */
+
+footer .contact-us-bg-color {
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXlyuQEb4juxA89aRDK3_zAZHmTnTiyiE_w&usqp=CAU"), */
+  background-image: url("https://media.istockphoto.com/photos/-picture-id1311934969?k=20&m=1311934969&s=612x612&w=0&h=ftaxrSpkUB_ftSu-Zcxp44C1pBpxntMzNFjf5rcXPkw="),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(34, 34, 34, 0.6));
+  /* background-image: linear-gradient(120deg, #a4a4a4 10%, #d2d2d7 100%); */
+  /* background-image: var(--gradiant-1); */
+
+  background-size: cover;
+}
+
+/*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXlyuQEb4juxA89aRDK3_zAZHmTnTiyiE_w&usqp=CAU  */
+
+/* https://img.freepik.com/premium-photo/contact-us-customer-support-hotline-people-connect-call-customer-support-email-address-live-chat-internet-wifi_36325-3415.jpg */
+
+.section-container {
+  width: 100%;
+  /* height: 50vh; */
+  overflow-x: hidden;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 50px auto;
+  /* background: grey; */
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 52px;
+  margin: 0;
+  padding: 0 0 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.flex-main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  /* min-width: 700px; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 500px; */
+  justify-content: center;
+  /* margin: 0 auto; */
+  gap: 20px;
+}
+
+.first-row-flex-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.second-row-flex-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-us-part {
+  box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 9%);
+  background: rgba(0, 0, 0, 0.6);
+  width: 175px;
+  max-height: 225px;
+  /* background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 6px;
+  color: #fff;
+  height: 100%; */
+}
+
+.contact-us-part-last {
+  box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 9%);
+  background: rgba(0, 0, 0, 0.6);
+  width: 370px;
+  /* height: 200px; */
+}
+
+.contact-us-content {
+  padding: 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-us-content-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.number-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-us-content-number {
+  font-size: 14;
+  color: #fff;
+}
+
+.call-icon {
+  /* fill: #fff; */
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.whatsapp-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.facebook-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.insta-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.mail-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.contact-us-content-mailid {
+  font-size: 14;
+  color: #fff;
+}
+
+.share-brief-icon {
+  /* fill: #fff; */
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.share-briff {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.location-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+  stroke: #fff;
+}
+
+.contact-us-content-address {
+  font-size: 14;
+  text-align: center;
+  color: #fff;
+}
+
+/* Media Query */
+
+/* Footer Updated */
+@media screen and (max-width: 760px) {
+  .contact-us-part {
+    width: 165px;
+  }
+
+  .contact-us-part-last {
+    width: 342px;
+  }
+
+  .contact-us-content-title {
+    font-size: 16px;
+  }
+
+  .flex-container {
+    padding: 0 7px;
+  }
+
+  .first-row-flex-part {
+    gap: 10px;
+  }
+
+  .second-row-flex-part {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .flex-container {
+    flex-wrap: wrap;
+    max-width: 650px;
+  }
+
+  .first-row-flex-part {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .second-row-flex-part {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .flex-container {
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+  }
+
+  .first-row-flex-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-row-flex-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-main-container {
+    justify-content: center;
+  }
+
+  .contact-us-part {
+    width: 200px;
+  }
+}

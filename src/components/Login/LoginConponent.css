@@ -1,0 +1,239 @@
+.close {
+  right: 4%;
+  top: 4%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  align-items: center;
+  width: 125px;
+}
+
+.login-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.show.login-screen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-screen .login-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(15 52 96 / 75%);
+  cursor: pointer;
+}
+.login-screen .loging-container {
+  position: relative;
+  z-index: 155;
+  background: #fff;
+  max-width: 1190px;
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}
+
+.lg_left_sec {
+  flex: 1;
+  background: #515151;
+  border-radius: 10px 0px 0px 10px;
+  padding: 4%;
+}
+
+.lg_left_sec p {
+  color: #fff;
+  line-height: 1;
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.login-row {
+  display: block;
+  flex: 2.5;
+  padding: 4%;
+}
+
+.login_image {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+  flex: 1;
+}
+
+.login-img {
+  text-align: center;
+}
+.login-img img {
+  max-width: 100%;
+}
+.login-form img {
+  max-width: 210px;
+}
+.login-form h2 {
+  margin: 7px 0 15px 0;
+  font-size: 29px;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+.login-form p {
+  display: flex;
+  max-width: 95%;
+  letter-spacing: 0.1em;
+  margin: 0 0 25px 0;
+}
+.login-form form .input-row {
+  position: relative;
+  display: flex;
+  max-width: 450px;
+  width: 100%;
+  padding: 5px 0 10px 45px;
+  margin: 0 0 14px 0;
+  transition: all 0.5s ease;
+  height: 50px;
+  border-bottom: 1px solid #515151;
+}
+
+.login-form form .input-row svg {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b1b1b1;
+  font-size: 16px;
+}
+
+.pass_eye_btn svg {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b1b1b1;
+  font-size: 16px;
+}
+
+.login-form form .input-row label {
+  font-size: 15px;
+}
+.login-form form .input-row input {
+  background: transparent;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #444;
+  width: 95%;
+}
+.login-form form .input-row:focus,
+.login-form form .input-row:hover {
+  transition: all 0.5s ease;
+  border-bottom: 3px solid #515151;
+}
+.login-form ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+}
+.login-form ul a {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #969696;
+  font-weight: 400;
+}
+.login-form ul a svg {
+  margin-right: 5px;
+  color: #969696;
+  font-size: 15px;
+}
+.login-form ul a.show svg {
+  color: #515151;
+}
+.login-button {
+  padding: 15px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.login-button button {
+  border-radius: 182px;
+  letter-spacing: 1.2px;
+  font-size: 120%;
+  height: 42px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.btn-login {
+  background: #515151;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background: #d1d1d1;
+}
+
+.login-button a {
+  color: #515151;
+  font-size: 12px;
+  justify-self: center;
+  margin-top: 2%;
+}
+
+/*  */
+
+@media screen and (max-width: 990px) {
+  .login-screen .loging-container {
+    flex-direction: column;
+  }
+  .lg_left_sec {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .lg_left_sec p {
+    padding: 0px 30px;
+  }
+
+  .close svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+  }
+
+  .login-row .login-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 30px;
+  }
+  .loging-container {
+    overflow-y: scroll;
+  }
+  /* .row{
+      display: block;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+  .login-screen .loging-container {
+    width: 75%;
+  }
+}
